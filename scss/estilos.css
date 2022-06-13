@@ -1,4 +1,5 @@
 .fondo-nav {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#361476), color-stop(#2d1067), color-stop(#250d58), color-stop(#1e0949), to(#17043b)) !important;
   background-image: linear-gradient(to bottom, #361476, #2d1067, #250d58, #1e0949, #17043b) !important;
 }
 
@@ -16,7 +17,9 @@
 }
 
 .nav-link:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -49,6 +52,8 @@ h2 {
 h5 {
   font-size: 20px;
   font-family: sans-serif;
+  padding: 15px 20px;
+  margin: 20px 20px;
 }
 
 .parrafo-nike {
@@ -62,56 +67,95 @@ p {
 }
 
 .grid-balenciaga {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 10px 10px;
   grid-auto-flow: row;
   justify-items: center;
-  align-items: center;
-  grid-template-areas: "balenciaga3 balenciaga3 balenciaga4 balenciaga4""balenciaga5 balenciaga5 balenciaga6 balenciaga6";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "balenciaga3 balenciaga3 balenciaga4 balenciaga4"
+ "balenciaga5 balenciaga5 balenciaga6 balenciaga6";
 }
 
 .balenciaga5 {
-  justify-self: center;
-  align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: balenciaga5;
 }
 
 .balenciaga6 {
-  justify-self: center;
-  align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: balenciaga6;
 }
 
 .balenciaga3 {
-  justify-self: center;
-  align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: balenciaga3;
 }
 
 .balenciaga4 {
-  justify-self: center;
-  align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column:3;
+  -ms-grid-column-span: 2;
   grid-area: balenciaga4;
 }
 
 .grid-balenciaga1 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 10px 10px;
   grid-auto-flow: row;
   justify-items: center;
-  align-items: center;
-  grid-template-areas: "balenciaga-1 balenciaga-2";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "balenciaga-1 balenciaga-2";
 }
 
 .balenciaga-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: balenciaga-1;
 }
 
 .balenciaga-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: balenciaga-2;
 }
 
@@ -120,7 +164,8 @@ form {
   margin: auto;
   background: #5c1579;
   padding: 10px 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 20px;
   border-radius: 5px;
 }
@@ -141,7 +186,8 @@ textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 17px;
   border: none;
 }
@@ -154,18 +200,21 @@ textarea {
 
 #boton {
   background: #100216;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 20px;
 }
 
 #boton:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease 0.1s;
   transition: all 0.3s ease 0.1s;
 }
 
 .pie-pagina {
   width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#361476), color-stop(#2d1067), color-stop(#250d58), color-stop(#1e0949), to(#17043b));
   background-image: linear-gradient(to bottom, #361476, #2d1067, #250d58, #1e0949, #17043b);
   height: 100%;
 }
@@ -174,6 +223,7 @@ textarea {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0px;
@@ -182,9 +232,15 @@ textarea {
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pie-pagina .grupo-1 .box figure img {
@@ -212,7 +268,7 @@ textarea {
   margin-right: 10px;
   background-color: linear-gradient(to bottom, #361476, #2d1067, #250d58, #1e0949, #17043b);
   text-align: center;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 /*# sourceMappingURL=estilos.css.map */
